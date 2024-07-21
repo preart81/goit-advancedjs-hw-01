@@ -69,21 +69,6 @@ htmlGallery.innerHTML = images.map(makeGalleryItem).join('');
 let gallery = new SimpleLightbox('.js-gallery a', {
   captionsData: 'alt',
   captionDelay: 250,
-  overlayColor: 'rgba(46, 47, 66, 0.8)',
+  // overlayColor: 'rgba(255, 47, 66, 1)',
   overlayOpacity: 1,
 });
-gallery.on('show.simplelightbox', function () {
-  // Do something…
-});
-
-// const onGalleryClick = event => {
-//   event.preventDefault();
-//   if (event.target.classList.contains('gallery-image')) {
-//     const instance = basicLightbox.create(`
-//       <img src="${event.target.dataset.source}" width="800" height="600">
-// `);
-//     instance.show();
-//   }
-// };
-
-// gallery.addEventListener('click', onGalleryClick);
