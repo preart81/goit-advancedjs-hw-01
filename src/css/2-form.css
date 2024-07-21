@@ -5,12 +5,13 @@ body {
 
 .container {
   max-width: 1200px;
-  padding: 0 24px;
+  padding: 24px;
   margin: 0 auto;
+  /* border-radius: 0; */
 }
 
 .feedback-form {
-  width: 408px;
+  width: 400px;
   margin: 0 auto;
   padding: 24px;
   display: flex;
