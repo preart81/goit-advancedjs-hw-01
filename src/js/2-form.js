@@ -18,7 +18,7 @@ const fillFormFromLS = (form, savedItemName) => {
 };
 
 const onFormInput = event => {
-  formData[event.target.name] = event.target.value;
+  formData[event.target.name] = event.target.value.trim();
   localStorage.setItem('feedback-form-state', JSON.stringify(formData));
 };
 
